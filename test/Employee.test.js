@@ -28,20 +28,3 @@ describe("Employee class", () => {
       });
   })
 
-//   describe("Employee class", () => {
-//     describe("getRole method", () => {
-//       it("returns employee role", () => {
-  
-//           expect(result).toBe('');
-//         });
-//       });
-//   })
-// The first class is an `Employee` parent class with the following properties and methods:
-
-// * `getName()`
-
-// * `getId()`
-
-// * `getEmail()`
-
-// * `getRole()`&mdash;returns `'Employee'`
