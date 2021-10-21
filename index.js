@@ -5,7 +5,8 @@ const fs = require('fs');
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
-//initial Employee prompt
+const htmlGenerator = require("./lib/generateHTML")
+
 const employeeData = [];
 
 const addEmployee = () =>{
@@ -29,7 +30,8 @@ const addEmployee = () =>{
         internQuestions();
       } 
       else {
-        console.log('generateHtml');
+        // console.log('generateHTML')
+        fs.writeFileSync('./dist/team.html', htmlGenerator(employeeData))      
       }
     }
   )}
@@ -60,8 +62,12 @@ const addEmployee = () =>{
       // this needs to store the information in the employeeData array? rather than writing file?
       .then((data) => {
         // console.log(data);
-        const Engineer = new Engineer(name, id, email, github);
-
+        const {name, id, email, github} = data;
+        const engineer = new Engineer (name, id, email, github)
+        console.log(engineer);
+        employeeData.push(engineer);
+        console.log(employeeData);
+        addEmployee();
         
       });
     }
@@ -91,8 +97,12 @@ const addEmployee = () =>{
         ])
         .then((data) => {
           // console.log(data);
-          const intern = new Intern (name, id, email, school)
-
+          const {name, id, email, school} = data;
+          const intern = new Manager (name, id, email, school)
+          console.log(intern);
+          employeeData.push(intern);
+          console.log(employeeData);
+          addEmployee();
         });
       }
 
@@ -128,14 +138,10 @@ const addEmployee = () =>{
             console.log(employeeData);
             addEmployee();
             
-
           });
         }
     
 
-
-
-  
 const init = () =>{
     addEmployee()
     // .then((response) => fs.writeFileSync('./dist/team.html', userInput(response)))
