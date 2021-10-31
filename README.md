@@ -9,8 +9,11 @@ Features Implemented:
 - user creates new employees by teams
 - once complete with creating the team, user ends application and an HTML is created with the input information
 
-## Demo Video Link:
+Future Development:
+- styling of cards and html webpage
 
+## Demo Video Link:
+https://watch.screencastify.com/v/Hp1BApBsbwHu4FC3ZrFg
 
 --------
 # User Story and Technical Criteria to Follow:
