@@ -1,4 +1,20 @@
 # Homework-10-TeamBuilder-WTRIII
+
+## Summary
+
+Client sought a command-line application that takes information about employees and displays the information in an HTML format.
+
+Features Implemented:
+- user can create new employees based on role
+- user creates new employees by teams
+- once complete with creating the team, user ends application and an HTML is created with the input information
+
+## Demo Video Link:
+
+
+--------
+# User Story and Technical Criteria to Follow:
+
 OOP: Team Profile Generator
 # 10 Object-Oriented Programming: Team Profile Generator
 

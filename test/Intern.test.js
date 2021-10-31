@@ -1,4 +1,4 @@
-const Employee = require("./lib/Employee");
+const Employee = require("../lib/Employee");
 const Intern = require("../lib/Intern");
 const inquirer = require('inquirer');
 const fs = require('fs');
@@ -6,7 +6,7 @@ const fs = require('fs');
 describe("Intern role", () => {
     describe("getRole method", () => {
       it("returns intern as role", () => {
-        const internRole = new Intern("Vlad", 32, "vlad@impaler.com")
+        const internRole = new Intern("Vlad", 32, "vlad@impaler.com", "UTA")
         expect(internRole.getRole()).toBe("Intern");
     });
       });
@@ -14,8 +14,8 @@ describe("Intern role", () => {
   describe("Intern school", () => {
     describe("getSchool method", () => {
       it("returns intern as role", () => {
-        const internSchool = new Intern("Vlad", 32, "vlad@impaler.com")
-        expect(internSchool.getSchool()).toBe(this.school);
+        const internSchool = new Intern("Vlad", 32, "vlad@impaler.com", "UTA")
+        expect(internSchool.getSchool()).toBe("UTA");
     });
       });
   })

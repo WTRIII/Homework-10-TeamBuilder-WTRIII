@@ -6,7 +6,7 @@ describe("Employee class", () => {
   describe("getName method", () => {
     it("displays employee name", () => {
       const employeeName = new Employee ("Vlad", 32, "vlad@impaler.com")
-        expect(employeeName.getName).toBe(this.name);
+        expect(employeeName.getName()).toBe("Vlad");
       });
     });
 })
@@ -14,7 +14,7 @@ describe("Employee class", () => {
     describe("getID method", () => {
       it("returns employee ID", () => {
         const employeeID = new Employee("Vlad", 32, "vlad@impaler.com")
-          expect(employeeID.getID()).toBe(this.id);
+          expect(employeeID.getID()).toBe(32);
         });
       });
   })
@@ -22,7 +22,7 @@ describe("Employee class", () => {
     describe("getEmail method", () => {
       it("returns employee email", () => {
         const employeeEmail = new Employee("Vlad", 32, "vlad@impaler.com")
-        expect(employeeEmail.getEmail()).toBe(this.email);
+        expect(employeeEmail.getEmail()).toBe("vlad@impaler.com");
     });
       });
   })
