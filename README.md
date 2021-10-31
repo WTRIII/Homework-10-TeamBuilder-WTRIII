@@ -4,16 +4,19 @@
 
 Client sought a command-line application that takes information about employees and displays the information in an HTML format.
 
-Features Implemented:
+### Features Implemented:
 - user can create new employees based on role
 - user creates new employees by teams
 - once complete with creating the team, user ends application and an HTML is created with the input information
 
-Future Development:
+### Future Development:
 - styling of cards and html webpage
 
 ## Demo Video Link:
 https://watch.screencastify.com/v/Hp1BApBsbwHu4FC3ZrFg
+
+### Help Received:
+Worked with Ethan Cho on formatting/syntax.
 
 --------
 # User Story and Technical Criteria to Follow:
